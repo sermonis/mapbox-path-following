@@ -1,0 +1,72 @@
+html{
+    --map-width: 100%;
+    --map-height: 480px;
+    --marker-from-bottom : -90px;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'helvetica';
+}
+
+.wrap {
+    height: var(--map-height);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: var(--map-width);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('assets/J1_3D_CCP_0000.png') center center;
+    z-index: 1;
+    background-size: cover;
+    pointer-events: none;
+}
+
+#map {
+    height: calc(var(--map-height) * 2);
+    transform: translate3d(0,var(--marker-from-bottom),0);
+}
+
+.button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    height: 45px;
+    display: flex;
+    background: #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
+.speed {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    font-size: 20px;
+    padding: 1em;
+    display: flex;
+}
+
+.speed input {
+    font-size: 140%;
+    text-align: right;
+    width: 6em;
+    margin:0 10px;
+    -webkit-appearance:none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.button:active {
+    background: #aaa;
+}
