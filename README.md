@@ -3,6 +3,6 @@ An example of following path animation based on geoJSON waypoints using Mapbox A
 
 # Demo
 
-![Demo](https://surebak.com/mapbox-path-following/map_following.gif)
+![Demo](./map_following.gif)
 
 https://surebak.com/mapbox-path-following
